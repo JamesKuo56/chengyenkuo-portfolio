@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Resume hub for ChengYen Kuo, an Electrical and Computer Engineering graduate student focused on semiconductor fabrication, device characterization, and advanced TCAD modeling."
+      content="Engineering portfolio for ChengYen Kuo, an Electrical and Computer Engineering graduate student focused on semiconductor fabrication, device characterization, and advanced TCAD modeling."
     />
     <title>ChengYen Kuo | Semiconductor Engineering Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -23,7 +23,7 @@
         <span>ChengYen Kuo</span>
       </a>
       <nav class="nav" aria-label="Primary navigation">
-        <a href="#education">Resume</a>
+        <a href="#education">Education</a>
         <a href="#experience">Experience</a>
         <a href="#documents">Documents</a>
         <a href="#top">Contact</a>
@@ -33,17 +33,15 @@
     <main id="top">
       <section class="hero">
         <div class="hero-copy">
-          <p class="eyebrow">Resume & Supporting Documents</p>
+          <p class="eyebrow">Engineering Portfolio</p>
           <h1>ChengYen Kuo</h1>
           <p class="hero-text">
             Graduate student in Electrical & Computer Engineering at the University of Washington,
             based in Seattle, WA.
           </p>
           <div class="hero-actions">
-            <a class="button primary" href="documents.html#resume" target="_blank" rel="noreferrer">
-              View Resume
-            </a>
-            <a class="button secondary" href="#documents">See Documents</a>
+            <a class="button primary" href="#experience">View Experience</a>
+            <a class="button secondary" href="#documents">See Certificates</a>
           </div>
           <dl class="quick-facts" aria-label="Quick facts">
             <div>
@@ -81,7 +79,7 @@
         </div>
         <div class="timeline">
           <article class="timeline-item">
-            <div class="timeline-meta">Expected Jun. 2026</div>
+            <div class="timeline-meta">Expected Sep. 2026</div>
             <h3>University of Washington</h3>
             <p>M.S. in Electrical & Computer Engineering | GPA: 3.8/4.0</p>
             <p class="muted">
@@ -110,9 +108,9 @@
           <article>
             <h3>Fabrication & Characterization</h3>
             <ul>
-              <li>CVD, PECVD, PVD, RIE</li>
+              <li>CVD, PECVD, PVD, RIE, E-beam Evaporation, Sputtering</li>
               <li>Dry/Wet Etching, Photolithography</li>
-              <li>SEM, AFM, Profilometry</li>
+              <li>SEM, AFM, Profilometry, Filmetrics, Raman Spectroscopy, IV/CV Testing</li>
             </ul>
           </article>
           <article>
@@ -136,9 +134,29 @@
       <section class="section" id="experience">
         <div class="section-heading">
           <p class="eyebrow">Experience</p>
-          <h2>Electromagnetic actuator design, MEMS pressure sensors, Micro-LED optoelectronic simulation, WNF microfabrication, and CVD diamond thin-film research.</h2>
+          <h2>Process engineering preparation across cleanroom fabrication, device characterization, Micro-LED simulation, MEMS sensors, and actuator systems.</h2>
         </div>
         <div class="experience-list">
+          <article class="experience-card">
+            <div class="experience-topline">
+              <span>Jun. 2026 - Aug. 2026</span>
+              <span>Fremont, CA</span>
+            </div>
+            <h3>Coherent Corp.</h3>
+            <p class="role">Incoming Process Engineer Intern</p>
+            <ul>
+              <li>
+                Incoming process engineering internship focused on applying semiconductor fabrication,
+                device characterization, and data-driven troubleshooting experience in an industrial
+                manufacturing environment.
+              </li>
+              <li>
+                Prepared to support process optimization, root-cause analysis, and yield-improvement
+                workflows using cleanroom process knowledge and Python, MATLAB, and SQL-based analysis skills.
+              </li>
+            </ul>
+          </article>
+
           <article class="experience-card">
             <div class="experience-topline">
               <span>Jan. 2026 - Present</span>
@@ -148,18 +166,24 @@
             <p class="role">Low Power Magnetic Linear Actuator</p>
             <ul>
               <li>
-                Designed and validated a 3D magnetic circuit in Ansys Maxwell using a triple-magnet array,
-                deriving Kf = 2.21 N/A and identifying coreless coil geometry as the primary bottleneck.
+                Designed and validated a low-power magnetic linear actuator for camera positioning, using a
+                3-phase coil drive over an alternating-polarity magnet array to produce bidirectional linear
+                thrust without a lead screw, belt, or conventional motor.
               </li>
               <li>
-                Integrated a steel back-iron flux return plate, doubling peak simulated thrust to greater
-                than 10 N and validating performance against a 120 degree block commutation drive strategy.
+                Modeled the magnetic circuit in Ansys Maxwell and identified coil geometry as the critical
+                design bottleneck; FEA predicted Kf = 2.21 N/A, guiding future coil redesign toward higher
+                force output under sub-1 A operation.
               </li>
               <li>
-                Developed embedded C/C++ firmware on Arduino Nano 33 BLE with a 6-step FSM stepper and
-                wireless BLE web interface for bidirectional motion control.
+                Implemented wireless ESP32-based control with motion-state logic for safe bidirectional
+                positioning, achieving 0.446 A active draw, 0.03 A idle draw, 280 mm travel, 2.33 mm RMS
+                error, and 12+ hr operation on a 3S 5200 mAh LiPo battery.
               </li>
             </ul>
+            <div class="card-actions">
+              <a class="button secondary" href="project-details.html#uw-seal">View Details</a>
+            </div>
           </article>
 
           <article class="experience-card">
@@ -171,14 +195,18 @@
             <p class="role">Graduate Researcher</p>
             <ul>
               <li>
-                Simulated InGaAsP/InP Micro-LED integration with heterojunction phototransistors in Lumerical.
+                Modeled InGaAsP/InP Micro-LED and heterojunction phototransistor integration in Ansys
+                Lumerical, focusing on how device structure and process-related effects influence
+                electro-optical behavior.
               </li>
               <li>
-                Built Python workflows to evaluate IQE, LEE, and emitted optical power for a
-                300 micrometer by 300 micrometer device footprint.
+                Developed Python post-processing workflows to translate simulation outputs into device-level
+                metrics, including IQE, LEE, emission profiles, and optical power trends for a
+                300 um x 300 um footprint.
               </li>
               <li>
-                Studied surface recombination velocity and sidewall defect effects from mesa formation and RIE damage.
+                Investigated performance degradation mechanisms related to surface recombination and
+                RIE-induced sidewall damage, linking process defects to optical and electrical variation.
               </li>
             </ul>
           </article>
@@ -192,15 +220,22 @@
             <p class="role">Microfabrication Project</p>
             <ul>
               <li>
-                Fabricated microelectronic devices using PECVD oxide deposition, photolithography, and RIE.
+                Completed a full cleanroom microfabrication flow integrating PECVD SiO2 deposition,
+                photolithography, CF4/CHF3-based RIE, metallization, and electrical test structure validation.
               </li>
               <li>
-                Engineered Cr/Al and Al/Cu metallization stacks with e-beam evaporation and sputtering.
+                Built Cr/Al and Al/Cu metallization stacks using e-beam evaporation and sputtering,
+                with attention to step coverage, interconnect reliability, and process repeatability.
               </li>
               <li>
-                Achieved +/-0.4% oxide uniformity and used IV/CV sweeps for electrical failure analysis.
+                Validated process quality through Filmetrics oxide-thickness mapping, achieving +/-0.4%
+                within-wafer uniformity, and performed diode IV/CV analysis to connect fabrication defects
+                with device behavior.
               </li>
             </ul>
+            <div class="card-actions">
+              <a class="button secondary" href="project-details.html#wnf">View Details</a>
+            </div>
           </article>
 
           <article class="experience-card">
@@ -212,16 +247,16 @@
             <p class="role">Flexible MEMS Pressure Sensor</p>
             <ul>
               <li>
-                Engineered a flexible capacitive pressure sensor using PDMS and Parylene C encapsulation,
-                replacing rigid silicon substrates to improve wearable application potential.
+                Designed a flexible capacitive MEMS pressure sensor using PDMS and Parylene C encapsulation
+                to move beyond rigid silicon-based sensor structures for wearable monitoring applications.
               </li>
               <li>
-                Achieved a 31% improvement in systolic accuracy and 20% improvement in diastolic accuracy
-                compared with rigid benchmarks.
+                Modeled capacitance-to-pressure response to tune sensor sensitivity across physiologically
+                relevant pressure ranges.
               </li>
               <li>
-                Modeled capacitance-to-pressure response curves to optimize sensitivity range for human
-                physiological monitoring.
+                Evaluated sensor performance against rigid benchmark designs, demonstrating improved
+                systolic and diastolic measurement accuracy for flexible pressure-sensing applications.
               </li>
             </ul>
           </article>
@@ -235,13 +270,17 @@
             <p class="role">Undergraduate Researcher</p>
             <ul>
               <li>
-                Synthesized diamond films on silicon via Hot-Filament CVD for DUV applications.
+                Synthesized diamond thin films on silicon using hot-filament CVD and DOE-based process
+                optimization to study CH4/H2 gas ratio, reaction conditions, and film quality for
+                DUV-related applications.
               </li>
               <li>
-                Used Raman spectroscopy, SEM, and AFM to characterize morphology defects and film quality.
+                Characterized film morphology, crystalline quality, and surface roughness using Raman
+                spectroscopy, SEM, and AFM, including analysis of the diamond 1332 cm-1 Raman peak.
               </li>
               <li>
-                Developed MATLAB analysis methods to connect spectroscopic trends with gas-ratio optimization.
+                Developed MATLAB-based analysis workflows to extract trends from spectroscopic data and
+                guide process optimization for improved film stability and repeatability.
               </li>
             </ul>
           </article>
@@ -251,19 +290,9 @@
       <section class="section documents" id="documents">
         <div class="section-heading compact">
           <p class="eyebrow">Documents</p>
-          <h2>One URL can hold the resume and every supporting file recruiters may request.</h2>
+          <h2>Supporting certificates and credentials for fabrication, MEMS, CAD, and process improvement.</h2>
         </div>
         <div class="document-grid">
-          <article class="document-card featured">
-            <div>
-              <span class="doc-type">PDF</span>
-              <h3>Resume</h3>
-              <p>Full resume with education, technical skills, research experience, and project details.</p>
-            </div>
-            <a class="button primary" href="documents.html#resume" target="_blank" rel="noreferrer">
-              View Preview
-            </a>
-          </article>
           <article class="document-card">
             <div>
               <span class="doc-type">Certificate</span>
@@ -320,7 +349,7 @@
     </main>
 
     <footer>
-      <p>© <span id="year"></span> ChengYen Kuo. Resume hub for recruiters and hiring teams.</p>
+      <p>© <span id="year"></span> ChengYen Kuo. Engineering portfolio for recruiters and hiring teams.</p>
     </footer>
 
     <script src="script.js"></script>
